@@ -1,0 +1,111 @@
+body
+  background-color: #f4f5fe
+  z-index: 1
+header
+  display: flex
+  flex-direction: row
+  justify-items: center
+  justify-content: center
+  align-content: center
+  align-items: center
+  gap: 0 10px
+  h1
+    padding: 0.5rem 0 0 0
+    
+main
+  display: grid
+  grid-template-columns: repeat(3,210px)
+  justify-content: center
+  align-items: center
+  justify-items: center
+  margin: 0.5rem 0
+  .style
+    border: 2px solid #15111e
+    border-radius: 15px
+    width: 200px
+    height: 150px
+    margin: 5px
+    background-color: #fff
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+  .style:hover
+    border: 2px solid #3998af44
+    border-radius: 15px
+  .option
+    border: none
+    border-radius: 15px
+    width: 200px
+    height: 150px
+    background-color: transparent
+    font-size: 7rem
+    color: #bec4fc
+section
+  display: flex
+  flex-direction: row
+  justify-content: center
+  margin: 1rem 0
+  button
+    border: 1px solid transparent
+    border-radius: 15px
+    padding: 5px
+    background-color: #3998af44
+  button:hover
+    border: 1px solid #212121
+.winScreen
+  position: absolute
+  right: 0
+  left: 0
+  top: 0
+  bottom: 0
+  display: flex
+  flex-direction: column
+  gap: 1rem
+  width: 100vw
+  height: 100vh
+  background-color: #f4f5fe
+  justify-content: center
+  align-items: center
+  z-index: 2
+  font-size: 3rem
+  button
+    border: 1px solid transparent
+    border-radius: 15px
+    padding: 10px
+    background-color: #3998af44
+  button:hover
+    border: 1px solid #212121
+
+.hidden
+  display: none
+
+@media only screen and (max-width: 750px)
+  main
+    display: grid
+    grid-template-columns: repeat(3, 10rem)
+    justify-content: center
+    align-items: center
+    justify-items: center
+    margin: 0.5rem 0
+    width: 95vw
+    .style
+      width: 8rem
+      height: 8rem
+    .option
+      width: 8rem
+      height: 8rem
+  .winScreen
+    position: absolute
+    right: 0
+    left: 0
+    top: 0
+    bottom: 0
+    display: flex
+    flex-direction: column
+    gap: 1rem
+    width: 100vw
+    height: 100vh
+    background-color: #f4f5fe
+    justify-content: center
+    align-items: center
+    z-index: 2
+    font-size: 2rem
+    text-align: center

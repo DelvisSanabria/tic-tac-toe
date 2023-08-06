@@ -1,2 +1,2 @@
-# tic-tac-toe
- a simple, and beuty tic-tac-toe 2 players game
+# practica-Juego-tres-en-raya
+ simple tic-tac-toe two players game
